@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO A HTML</title>
+</head>
+
+<body bgcolor="cyan" text="orange">
+
+    <!-- ENLACES -->
+    <a href="dos.html">DOS</a>
+    <a href="https://www.google.com" target="_blank">GOOGLE</a>
+    <a href="miestilo.html">MI ESTILO</a>
+
+    <hr>
+
+    <!-- TÍTULOS -->
+    <h1>ANGEL MARTÍNEZ</h1>
+    <h2>ANGEL MARTÍNEZ</h2>
+    <h3>ANGEL MARTÍNEZ</h3>
+    <h4>ANGEL MARTÍNEZ</h4>
+    <h5>ANGEL MARTÍNEZ</h5>
+    <h6>ANGEL MARTÍNEZ</h6>
+
+    <!-- TEXTO -->
+    <p>Hola mundo</p>
+    <p>HOLA CECYTOS</p>
+
+    <hr>
+
+    <!-- MARQUEE -->
+    <marquee direction="left">VIVA MÉXICO</marquee>
+    <marquee direction="right">VIVA MÉXICO</marquee>
+
+    <hr>
+
+    <!-- LISTA DESORDENADA -->
+    <ul type="circle">
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+    </ul>
+
+    <!-- LISTA ORDENADA -->
+    <ol type="I">
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+        <li>ANGEL MARTÍNEZ</li>
+    </ol>
+
+    <hr>
+
+    <!-- IMAGEN -->
+    <img src="img/pible.jpg" alt="Pible" width="300">
+
+    <hr>
+
+    <!-- TABLA -->
+    <table border="1" width="100%" cellspacing="0" cellpadding="10">
+
+        <tr>
+            <td>ANGEL</td>
+            <td>MARTÍNEZ</td>
+        </tr>
+
+        <tr>
+            <td>ANGEL</td>
+            <td>MARTÍNEZ</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <!-- VIDEO -->
+    <video width="500" controls>
+
+    <source src="img/videopible.mp4" type="video/mp4">
+
+    Tu navegador no soporta videos.
+
+</video>
+
+    <hr>
+
+    <!-- FORMULARIO -->
+    <h1>FORMULARIOS</h1>
+
+    <form action="procesar.php" method="POST">
+
+        <fieldset>
+
+            <legend>Datos personales</legend>
+
+            <!-- NOMBRE -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <!-- CORREO -->
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo">
+            <br><br>
+
+            <!-- PASSWORD -->
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass">
+            <br><br>
+
+            <!-- EDAD -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="100">
+            <br><br>
+
+            <!-- FECHA -->
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+
+            <!-- COLOR -->
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- RADIO -->
+        <p>Género:</p>
+
+        <input type="radio" name="genero" value="hombre"> Hombre
+        <input type="radio" name="genero" value="mujer"> Mujer
+
+        <br><br>
+
+        <!-- CHECKBOX -->
+        <p>Intereses:</p>
+
+        <input type="checkbox" name="intereses" value="deporte"> Deporte
+        <input type="checkbox" name="intereses" value="musica"> Música
+        <input type="checkbox" name="intereses" value="videojuegos"> Videojuegos
+
+        <br><br>
+
+        <!-- SELECT -->
+        <label for="pais">País:</label>
+
+        <select id="pais" name="pais">
+
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- DATALIST -->
+        <label for="navegador">Navegador:</label>
+
+        <input list="navegadores" id="navegador" name="navegador">
+
+        <datalist id="navegadores">
+
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+
+        </datalist>
+
+        <br><br>
+
+        <!-- TEXTAREA -->
+        <label for="mensaje">Mensaje:</label>
+
+        <br>
+
+        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <!-- RANGE -->
+        <label for="nivel">Nivel de satisfacción:</label>
+
+        <input type="range" id="nivel" name="nivel" min="0" max="10">
+
+        <br><br>
+
+        <!-- FILE -->
+        <label for="archivo">Subir archivo:</label>
+
+        <input type="file" id="archivo" name="archivo">
+
+        <br><br>
+
+        <!-- BOTONES -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+
+</body>
+
+</html>

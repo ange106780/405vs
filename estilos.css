@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DE LA IMAGEN */
+img{
+    width: 200px;
+    height: 200px;
+
+    display: block;
+    margin: 30px auto;
+
+    border: 2px solid black;
+    border-radius: 100%;
+
+    box-shadow: 0px 10px 20px yellow;
+
+    transition: all 1s ease;
+}
+
+/* EFECTO HOVER */
+img:hover{
+
+    border-radius: 30%;
+
+    box-shadow: 0px 10px 20px red;
+
+    transform: scale(1.2) rotate(360deg);
+
+    transition: all 1s ease;
+}
