@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDICOPPEL</title>
+
+    <link rel="stylesheet" href="estilos.css"/>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        .contenedor{
+            background: white;
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        select, input{
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #img img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body onload="calcular()">
+
+    <div class="contenedor">
+
+        <h1>CREDICOPPEL</h1>
+
+        <img src="img/logo.png" width="180">
+
+        <hr>
+
+        <h2>Selecciona un artículo</h2>
+
+        <div id="img"></div>
+
+        <select id="producto" onchange="calcular()">
+            <option value="tv">Pantalla</option>
+            <option value="comedor">Comedor</option>
+            <option value="lavadora">Lavadora</option>
+            <option value="moto">Motocicleta</option>
+            <option value="sala">Sala</option>
+        </select>
+
+        <br><br>
+
+        <div id="precio">Costo del producto: $0.00 MXN</div>
+
+        <hr>
+
+        <h2>Elige el plan de pagos</h2>
+
+        <input type="radio" name="plazo" id="uno" onchange="calcular()" checked>
+        6 meses (+10%) <br>
+
+        <input type="radio" name="plazo" id="dos" onchange="calcular()">
+        12 meses (+15%) <br>
+
+        <input type="radio" name="plazo" id="tres" onchange="calcular()">
+        18 meses (+20%) <br><br>
+
+        <h2>Cantidad de productos</h2>
+
+        <input
+            type="number"
+            id="cantidad"
+            value="1"
+            min="1"
+            max="999"
+            onchange="calcular()"
+        >
+
+        <hr>
+
+        <div id="contado">Pago al contado: $0.00 MXN</div>
+        <div id="credito">Total financiado: $0.00 MXN</div>
+        <div id="abono">Pago mensual: $0.00 MXN</div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
