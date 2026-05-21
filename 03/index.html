@@ -4,81 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJERCICIO 3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
-" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="fondo">
+
     <div class="container">
+
         <h1 class="text-center text-light my-3">FIGURAS</h1>
+
         <div class="row">
+
             <div class="col">
+
                 <table class="w-100">
+
+                    <!-- ANCHO -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>ANCHO</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>ANCHO</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td class="w-50"><input type="range" class="form-control" id="ancho" min="10" max="500" value="50"></td>
-                        <td class="w-50 text-center" ><h2 id="vancho">50</h2></td>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="ancho" min="10" max="500" value="50">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vancho">50</h2>
+                        </td>
                     </tr>
+
+                    <!-- ALTO -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>ALTO</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>ALTO</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td class="w-50"><input type="range" class="form-control" id="alto" min="10" max="500" value="50"></td>
-                        <td class="w-50 text-center" ><h2 id="valto">50</h2></td>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="alto" min="10" max="500" value="50">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="valto">50</h2>
+                        </td>
                     </tr>
+
+                    <!-- COLOR -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>COLOR RELLENO</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>COLOR RELLENO</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td colspan="2""><input type="color" class="form-control" id="color" ></td>
+                        <td colspan="2">
+                            <input type="color" class="form-control" id="color">
+                        </td>
                     </tr>
+
+                    <!-- RADIUS -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>RADIUS</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>RADIUS</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td class="w-50"><input type="range"            class="form-control" id="radius" min="0" max="100" value="0"></td>
-                        <td class="w-50 text-center" ><h2 id="vradio">0</h2></td>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="radius" min="0" max="100" value="0">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vradio">0</h2>
+                        </td>
                     </tr>
+
+                    <!-- ANCHO BORDE -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>ANCHO BORDER</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>ANCHO BORDER</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td class="w-50"><input type="range" class="form-control" id="anchoborde" min="0" max="100" value="5"></td>
-                        <td class="w-50 text-center" ><h2 id="vanchoborde">5</h2></td>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="anchoborde" min="0" max="100" value="5">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vanchoborde">5</h2>
+                        </td>
                     </tr>
+
+                    <!-- TIPO BORDER -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>TIPO DE BORDER</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>TIPO DE BORDER</h2>
+                        </td>
                     </tr>
+
                     <tr>
                         <td colspan="2" class="w-50">
-                        <select id="tipoborde" class="form-control">
-                            <option value="none">none</option>
-                            <option value="solid">solid</option>
-                            <option value="dashed">dashed</option>
-                            <option value="dotted">dotted</option>
-                            <option value="double">double</option>
-                        </select>
+
+                            <select id="tipoborde" class="form-control">
+
+                                <option value="none">none</option>
+                                <option value="solid">solid</option>
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+
+                            </select>
+
+                        </td>
                     </tr>
+
+                    <!-- COLOR BORDER -->
                     <tr>
-                        <td colspan="2" class="text-center"><h2>COLOR BORDER</h2></td>
+                        <td colspan="2" class="text-center">
+                            <h2>COLOR BORDER</h2>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td colspan="2"><input type="color" class="form-control" id="colorborde" ></td>
+                        <td colspan="2">
+                            <input type="color" class="form-control" id="colorborde">
+                        </td>
                     </tr>
+
+                    <!-- SOMBRA -->
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>SOMBRA</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="sombra" min="0" max="100" value="0">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vsombra">0</h2>
+                        </td>
+                    </tr>
+
+                    <!-- EJE X -->
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>EJE X</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="ejex" min="-100" max="100" value="0">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vejex">0</h2>
+                        </td>
+                    </tr>
+
+                    <!-- EJE Y -->
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>EJE Y</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-50">
+                            <input type="range" class="form-control" id="ejey" min="-100" max="100" value="0">
+                        </td>
+
+                        <td class="w-50 text-center">
+                            <h2 id="vejey">0</h2>
+                        </td>
+                    </tr>
+
                 </table>
+
             </div>
+
             <div class="col centrar">
-                <div id="figura">
-                    
-                </div>
+
+                <div id="figura"></div>
+
             </div>
+
         </div>
+
     </div>
-    <script src="
-https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js
-"></script>
-<script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
